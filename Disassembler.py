@@ -172,6 +172,41 @@ class Disassemble:
         Disassemble.pc += 1
       elif(hexInstr == "0xf"):
         print "0x0f RRC"
+      elif (hexInstr == "0x10"):
+        print "0x10"
+      elif (hexInstr == "0x11"):
+        print "0x11 LXI " + str(hex(Disassemble.instructions[Disassemble.pc + 1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc + 2]))
+        Disassemble.pc += 2
+      elif (hexInstr == "0x12"):
+        print "0x12 STAX D"
+      elif (hexInstr == "0x13"):
+        print "0x13 INX D"
+      elif (hexInstr == "0x14"):
+        print "0x14 INR D"
+      elif (hexInstr == "0x15"):
+        print "0x15 DCR D"
+      elif (hexInstr == "0x16"):
+        print "0x16 MVI D " + str(hex(Disassemble.instructions[Disassemble.pc + 1]))
+        Disassemble.pc += 1
+      elif (hexInstr == "0x17"):
+        print "0x17 RAL"
+      elif (hexInstr == "0x18"):
+        print "0x18"
+      elif (hexInstr == "0x19"):
+        print "0x19 DAD D"
+      elif (hexInstr == "0x1a"):
+        print "0x1a LDAX D"
+      elif (hexInstr == "0x1b"):
+        print "0x1b DCX D"
+      elif (hexInstr == "0x1c"):
+        print "0x1c INR E"
+      elif (hexInstr == "0x1d"):
+        print "0x1d DCR E"
+      elif (hexInstr == "0x1e"):
+        print "0x1e MVI E " + str(hex(Disassemble.instructions[Disassemble.pc + 1]))
+        Disassemble.pc += 1
+      elif (hexInstr == "0x1f"):
+        print "0x1f RAR"
       # elif(hexInstr == "0xc3"):
       #   # Change Endianness to little endian
       #   print "0xc3 JMP " + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2]))
