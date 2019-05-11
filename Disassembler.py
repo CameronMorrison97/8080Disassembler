@@ -1,4 +1,7 @@
 class Disassemble:
+  pc = 0
+  # instructions = [0x00,0x00,0x01,0xC3,0xC3,0x00]
+
   instructions = [0x00,0x00,0x00,0xC3,0xD4,0x18,0x00,0x00,0xF5,0xC5,0xD5,0xE5,0xC3,0x8C,0x00,0x00, # 0x00000000 ................
   0xF5,0xC5,0xD5,0xE5,0x3E,0x80,0x32,0x72,0x20,0x21,0xC0,0x20,0x35,0xCD,0xCD,0x17, # 0x00000010 ......2r !. 5...
   0xDB,0x01,0x0F,0xDA,0x67,0x00,0x3A,0xEA,0x20,0xA7,0xCA,0x42,0x00,0x3A,0xEB,0x20, # 0x00000020 ....g.:. ..B.:.
@@ -129,13 +132,50 @@ class Disassemble:
   0x22,0xFC,0x22,0xCD,0xE4,0x01,0xCD,0x7F,0x1A,0xCD,0x8D,0x08,0xCD,0xD6,0x09,0x00]
 
   def __init__(self):
-    i = 0
-    for i in range(0,len(Disassemble.instructions)):
-      Disassemble.interpet(self,hex(Disassemble.instructions[i]),i)
+    while Disassemble.pc < len(Disassemble.instructions):
+      Disassemble.interpet(self,hex(Disassemble.instructions[Disassemble.pc]))
+      Disassemble.pc+=1
 
-  def interpet(self,hexInstr,location):
+  def interpet(self,hexInstr):
       if(hexInstr == "0x0"):
-          print "0x0 NOP " + str(location)
+          print "0x0 NOP " + str(Disassemble.pc)
+      elif(hexInstr == "0x1"):
+          print "0x01 LXI " + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2]))
+          Disassemble.pc+=2
+      elif(hexInstr == "0x2"):
+        print "0x02 STAX B"
+      elif(hexInstr == "0x3"):
+        print "0x03 INX B"
+      elif(hexInstr == "0x4"):
+        print "0x04 INR B"
+      elif(hexInstr == "0x5"):
+        print "0x05 DCR B"
+      elif(hexInstr == "0x6"):
+        print "0x06 MVI B " + str(hex(Disassemble.instructions[Disassemble.pc+1]))
+        Disassemble.pc += 1
+      elif(hexInstr == "0x7"):
+        print "0x07 RLC"
+      elif(hexInstr == "0x8"):
+        print "0x08"
+      elif(hexInstr == "0x9"):
+        print "0x09 DAD B"
+      elif(hexInstr == "0xa"):
+        print "0x0a LDAX B"
+      elif(hexInstr == "0xb"):
+        print "0x0b DCX B"
+      elif(hexInstr == "0xc"):
+        print "0x0c INR C"
+      elif(hexInstr == "0xd"):
+        print "0x0d DCR C"
+      elif(hexInstr == "0xe"):
+        print "0x0e MVI C " + str(hex(Disassemble.instructions[Disassemble.pc+1]))
+        Disassemble.pc += 1
+      elif(hexInstr == "0xf"):
+        print "0x0f RRC"
+      # elif(hexInstr == "0xc3"):
+      #   # Change Endianness to little endian
+      #   print "0xc3 JMP " + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2]))
+      #   Disassemble.pc+=2
 
 def main():
     Dis = Disassemble();
