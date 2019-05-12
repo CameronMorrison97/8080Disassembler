@@ -293,261 +293,261 @@ class Disassemble:
     elif(hexInstr == "0x3f"):
       print()
     elif(hexInstr == "0x40"):
-      print()
+      print("0x4N MOV B,")
     elif(hexInstr == "0x41"):
-      print()
+      print("0x4N MOV B,")
     elif(hexInstr == "0x42"):
-      print()
+      print("0x4N MOV B,")
     elif(hexInstr == "0x43"):
-      print()
+      print("0x4N MOV B,")
     elif(hexInstr == "0x44"):
-      print()
+      print("0x4N MOV B,")
     elif(hexInstr == "0x45"):
-      print()
+      print("0x4N MOV B,")
     elif(hexInstr == "0x46"):
-      print()
+      print("0x4N MOV B,")
     elif(hexInstr == "0x47"):
-      print()
+      print("0x4N MOV B,")
     elif(hexInstr == "0x48"):
-      print()
+      print("0x4N MOV C,")
     elif(hexInstr == "0x49"):
-      print()
+      print("0x4N MOV C,")
     elif(hexInstr == "0x4a"):
-      print()
+      print("0x4N MOV C,")
     elif(hexInstr == "0x4b"):
-      print()
+      print("0x4N MOV C,")
     elif(hexInstr == "0x4c"):
-      print()
+      print("0x4N MOV C,")
     elif(hexInstr == "0x4d"):
-      print()
+      print("0x4N MOV C,")
     elif(hexInstr == "0x4e"):
-      print()
+      print("0x4N MOV C,")
     elif(hexInstr == "0x4f"):
-      print()
+      print("0x4N MOV C,")
     elif(hexInstr == "0x50"):
-      print()
+      print("0x5N MOV D,")
     elif(hexInstr == "0x51"):
-      print()
+      print("0x5N MOV D,")
     elif(hexInstr == "0x52"):
-      print()
+      print("0x5N MOV D,")
     elif(hexInstr == "0x53"):
-      print()
+      print("0x5N MOV D,")
     elif(hexInstr == "0x54"):
-      print()
+      print("0x5N MOV D,")
     elif(hexInstr == "0x55"):
-      print()
+      print("0x5N MOV D,")
     elif(hexInstr == "0x56"):
-      print()
+      print("0x5N MOV D,")
     elif(hexInstr == "0x57"):
-      print()
+      print("0x5N MOV D,")
     elif(hexInstr == "0x58"):
-      print()
+      print("0x5N MOV E,")
     elif(hexInstr == "0x59"):
-      print()
+      print("0x5N MOV E,")
     elif(hexInstr == "0x5a"):
-      print()
+      print("0x5N MOV E,")
     elif(hexInstr == "0x5b"):
-      print()
+      print("0x5N MOV E,")
     elif(hexInstr == "0x5c"):
-      print()
+      print("0x5N MOV E,")
     elif(hexInstr == "0x5d"):
-      print()
+      print("0x5N MOV E,")
     elif(hexInstr == "0x5e"):
-      print()
+      print("0x5N MOV E,")
     elif(hexInstr == "0x5f"):
-      print()
+      print("0x5N MOV E,")
     elif(hexInstr == "0x60"):
-      print()
+      print("0x6N MOV H,")
     elif(hexInstr == "0x61"):
-      print()
+      print("0x6N MOV H,")
     elif(hexInstr == "0x62"):
-      print()
+      print("0x6N MOV H,")
     elif(hexInstr == "0x63"):
-      print()
+      print("0x6N MOV H,")
     elif(hexInstr == "0x64"):
-      print()
+      print("0x6N MOV H,")
     elif(hexInstr == "0x65"):
-      print()
+      print("0x6N MOV H,")
     elif(hexInstr == "0x66"):
-      print()
+      print("0x6N MOV H,")
     elif(hexInstr == "0x67"):
-      print()
+      print("0x6N MOV H,")
     elif(hexInstr == "0x68"):
-      print()
+      print("0x6N MOV L,")
     elif(hexInstr == "0x69"):
-      print()
+      print("0x6N MOV L,")
     elif(hexInstr == "0x6a"):
-      print()
+      print("0x6N MOV L,")
     elif(hexInstr == "0x6b"):
-      print()
+      print("0x6N MOV L,")
     elif(hexInstr == "0x6c"):
-      print()
+      print("0x6N MOV L,")
     elif(hexInstr == "0x6d"):
-      print()
+      print("0x6N MOV L,")
     elif(hexInstr == "0x6e"):
-      print()
+      print("0x6N MOV L,")
     elif(hexInstr == "0x6f"):
-      print()
+      print("0x6N MOV L,")
     elif(hexInstr == "0x70"):
-      print()
+      print("0x7N MOV M,")
     elif(hexInstr == "0x71"):
-      print()
+      print("0x7N MOV M,")
     elif(hexInstr == "0x72"):
-      print()
+      print("0x7N MOV M,")
     elif(hexInstr == "0x73"):
-      print()
+      print("0x7N MOV M,")
     elif(hexInstr == "0x74"):
-      print()
+      print("0x7N MOV M,")
     elif(hexInstr == "0x75"):
-      print()
+      print("0x7N MOV M,")
     elif(hexInstr == "0x76"):
-      print()
+      print("0x7N HLT")
     elif(hexInstr == "0x77"):
-      print()
+      print("0x7N MOV M,")
     elif(hexInstr == "0x78"):
-      print()
+      print("0x7N MOV A,")
     elif(hexInstr == "0x79"):
-      print()
+      print("0x7N MOV A,")
     elif(hexInstr == "0x7a"):
-      print()
+      print("0x7N MOV A,")
     elif(hexInstr == "0x7b"):
-      print()
+      print("0x7N MOV A,")
     elif(hexInstr == "0x7c"):
-      print()
+      print("0x7N MOV A,")
     elif(hexInstr == "0x7d"):
-      print()
+      print("0x7N MOV A,")
     elif(hexInstr == "0x7e"):
-      print()
+      print("0x7N MOV A,")
     elif(hexInstr == "0x7f"):
-      print()
+      print("0x7N MOV A,")
     elif(hexInstr == "0x80"):
-      print()
+      print("0x8N ADD ")
     elif(hexInstr == "0x81"):
-      print()
+      print("0x8N ADD ")
     elif(hexInstr == "0x82"):
-      print()
+      print("0x8N ADD ")
     elif(hexInstr == "0x83"):
-      print()
+      print("0x8N ADD ")
     elif(hexInstr == "0x84"):
-      print()
+      print("0x8N ADD ")
     elif(hexInstr == "0x85"):
-      print()
+      print("0x8N ADD ")
     elif(hexInstr == "0x86"):
-      print()
+      print("0x8N ADD ")
     elif(hexInstr == "0x87"):
-      print()
+      print("0x8N ADD ")
     elif(hexInstr == "0x88"):
-      print()
+      print("0x8N ADC ")
     elif(hexInstr == "0x89"):
-      print()
+      print("0x8N ADC ")
     elif(hexInstr == "0x8a"):
-      print()
+      print("0x8N ADC ")
     elif(hexInstr == "0x8b"):
-      print()
+      print("0x8N ADC ")
     elif(hexInstr == "0x8c"):
-      print()
+      print("0x8N ADC ")
     elif(hexInstr == "0x8d"):
-      print()
+      print("0x8N ADC ")
     elif(hexInstr == "0x8e"):
-      print()
+      print("0x8N ADC ")
     elif(hexInstr == "0x8f"):
-      print()
+      print("0x8N ADC ")
     elif(hexInstr == "0x90"):
-      print()
+      print("0x9N SUB ")
     elif(hexInstr == "0x91"):
-      print()
+      print("0x9N SUB ")
     elif(hexInstr == "0x92"):
-      print()
+      print("0x9N SUB ")
     elif(hexInstr == "0x93"):
-      print()
+      print("0x9N SUB ")
     elif(hexInstr == "0x94"):
-      print()
+      print("0x9N SUB ")
     elif(hexInstr == "0x95"):
-      print()
+      print("0x9N SUB ")
     elif(hexInstr == "0x96"):
-      print()
+      print("0x9N SUB ")
     elif(hexInstr == "0x97"):
-      print()
+      print("0x9N SUB ")
     elif(hexInstr == "0x98"):
-      print()
+      print("0x9N SBB ")
     elif(hexInstr == "0x99"):
-      print()
+      print("0x9N SBB ")
     elif(hexInstr == "0x9a"):
-      print()
+      print("0x9N SBB ")
     elif(hexInstr == "0x9b"):
-      print()
+      print("0x9N SBB ")
     elif(hexInstr == "0x9c"):
-      print()
+      print("0x9N SBB ")
     elif(hexInstr == "0x9d"):
-      print()
+      print("0x9N SBB ")
     elif(hexInstr == "0x9e"):
-      print()
+      print("0x9N SBB ")
     elif(hexInstr == "0x9f"):
-      print()
+      print("0x9N SBB ")
     elif(hexInstr == "0xa0"):
-      print()
+      print("0xaN ANA ")
     elif(hexInstr == "0xa1"):
-      print()
+      print("0xaN ANA ")
     elif(hexInstr == "0xa2"):
-      print()
+      print("0xaN ANA ")
     elif(hexInstr == "0xa3"):
-      print()
+      print("0xaN ANA ")
     elif(hexInstr == "0xa4"):
-      print()
+      print("0xaN ANA ")
     elif(hexInstr == "0xa5"):
-      print()
+      print("0xaN ANA ")
     elif(hexInstr == "0xa6"):
-      print()
+      print("0xaN ANA ")
     elif(hexInstr == "0xa7"):
-      print()
+      print("0xaN ANA ")
     elif(hexInstr == "0xa8"):
-      print()
+      print("0xaN XRA ")
     elif(hexInstr == "0xa9"):
-      print()
+      print("0xaN XRA ")
     elif(hexInstr == "0xaa"):
-      print()
+      print("0xaN XRA ")
     elif(hexInstr == "0xab"):
-      print()
+      print("0xaN XRA ")
     elif(hexInstr == "0xac"):
-      print()
+      print("0xaN XRA ")
     elif(hexInstr == "0xad"):
-      print()
+      print("0xaN XRA ")
     elif(hexInstr == "0xae"):
-      print()
+      print("0xaN XRA ")
     elif(hexInstr == "0xaf"):
-      print()
+      print("0xaN XRA ")
     elif(hexInstr == "0xb0"):
-      print()
+      print("0xbN ORA ")
     elif(hexInstr == "0xb1"):
-      print()
+      print("0xbN ORA ")
     elif(hexInstr == "0xb2"):
-      print()
+      print("0xbN ORA ")
     elif(hexInstr == "0xb3"):
-      print()
+      print("0xbN ORA ")
     elif(hexInstr == "0xb4"):
-      print()
+      print("0xbN ORA ")
     elif(hexInstr == "0xb5"):
-      print()
+      print("0xbN ORA ")
     elif(hexInstr == "0xb6"):
-      print()
+      print("0xbN ORA ")
     elif(hexInstr == "0xb7"):
-      print()
+      print("0xbN ORA ")
     elif(hexInstr == "0xb8"):
-      print()
+      print("0xbN CMP ")
     elif(hexInstr == "0xb9"):
-      print()
+      print("0xbN CMP ")
     elif(hexInstr == "0xba"):
-      print()
+      print("0xbN CMP ")
     elif(hexInstr == "0xbb"):
-      print()
+      print("0xbN CMP ")
     elif(hexInstr == "0xbc"):
-      print()
+      print("0xbN CMP ")
     elif(hexInstr == "0xbd"):
-      print()
+      print("0xbN CMP ")
     elif(hexInstr == "0xbe"):
-      print()
+      print("0xbN CMP ")
     elif(hexInstr == "0xbf"):
-      print()
+      print("0xbN CMP ")
     elif(hexInstr == "0xc0"):
       print()
     elif(hexInstr == "0xc1"):
@@ -700,7 +700,7 @@ class Disassemble:
     elif(hexInstr == "0xfd"):
       print()
     elif(hexInstr == "0xfe"):
-      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))"0x4N MOV B,"
       Disassemble.pc+=1
     elif(hexInstr == "0xff"):
       print()
@@ -708,4 +708,4 @@ def main():
     Dis = Disassemble()
 
 
-main()
+main("0x4N MOV C,""0x5N MOV D,""0x5N MOV E,""0x6N MOV H,""0x6N MOV L,""0x7N MOV M,")
