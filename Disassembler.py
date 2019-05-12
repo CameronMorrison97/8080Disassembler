@@ -151,7 +151,7 @@ class Disassemble:
     if(hexInstr == "0x0"):
       print("0x00 NOP")
     elif(hexInstr == "0x1"):
-      print("")
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0x2"):
       print("")
@@ -162,7 +162,7 @@ class Disassemble:
     elif(hexInstr == "0x5"):
       print("")
     elif(hexInstr == "0x6"):
-      print("")
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0x7"):
       print("")
@@ -179,14 +179,14 @@ class Disassemble:
     elif(hexInstr == "0xd"):
       print("")
     elif(hexInstr == "0xe"):
-      print("")
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif (hexInstr == "0xf"):
       print("")
     elif(hexInstr == "0x10"):
       print()
     elif(hexInstr == "0x11"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0x12"):
       print()
@@ -197,7 +197,7 @@ class Disassemble:
     elif(hexInstr == "0x15"):
       print()
     elif(hexInstr == "0x16"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0x17"):
       print()
@@ -214,17 +214,17 @@ class Disassemble:
     elif(hexInstr == "0x1d"):
       print()
     elif(hexInstr == "0x1e"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0x1f"):
       print()
     elif(hexInstr == "0x20"):
       print()
     elif(hexInstr == "0x21"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0x22"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0x23"):
       print()
@@ -233,7 +233,7 @@ class Disassemble:
     elif(hexInstr == "0x25"):
       print()
     elif(hexInstr == "0x26"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0x27"):
       print()
@@ -242,7 +242,7 @@ class Disassemble:
     elif(hexInstr == "0x29"):
       print()
     elif(hexInstr == "0x2a"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0x2b"):
       print()
@@ -251,17 +251,17 @@ class Disassemble:
     elif(hexInstr == "0x2d"):
       print()
     elif(hexInstr == "0x2e"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0x2f"):
       print()
     elif(hexInstr == "0x30"):
       print()
     elif(hexInstr == "0x31"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0x32"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0x33"):
       print()
@@ -270,14 +270,14 @@ class Disassemble:
     elif(hexInstr == "0x35"):
       print()
     elif(hexInstr == "0x36"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0x37"):
       print()
     elif(hexInstr == "0x38"):
       print()
     elif(hexInstr == "0x39"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0x3a"):
       print()
@@ -288,7 +288,7 @@ class Disassemble:
     elif(hexInstr == "0x3d"):
       print()
     elif(hexInstr == "0x3e"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0x3f"):
       print()
@@ -553,18 +553,18 @@ class Disassemble:
     elif(hexInstr == "0xc1"):
       print()
     elif(hexInstr == "0xc2"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xc3"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xc4"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xc5"):
       print()
     elif(hexInstr == "0xc6"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xc7"):
       print()
@@ -573,18 +573,18 @@ class Disassemble:
     elif(hexInstr == "0xc9"):
       print()
     elif(hexInstr == "0xca"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xcb"):
       print()
     elif(hexInstr == "0xcc"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xcd"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xce"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xcf"):
       print()
@@ -593,18 +593,18 @@ class Disassemble:
     elif(hexInstr == "0xd1"):
       print()
     elif(hexInstr == "0xd2"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xd3"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xd4"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xd5"):
       print()
     elif(hexInstr == "0xd6"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xd7"):
       print()
@@ -613,18 +613,18 @@ class Disassemble:
     elif(hexInstr == "0xd9"):
       print()
     elif(hexInstr == "0xda"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xdb"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xdc"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xdd"):
       print()
     elif(hexInstr == "0xde"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xdf"):
       print()
@@ -633,17 +633,17 @@ class Disassemble:
     elif(hexInstr == "0xe1"):
       print()
     elif(hexInstr == "0xe2"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xe3"):
       print()
     elif(hexInstr == "0xe4"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xe5"):
       print()
     elif(hexInstr == "0xe6"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xe7"):
       print()
@@ -652,17 +652,17 @@ class Disassemble:
     elif(hexInstr == "0xe9"):
       print()
     elif(hexInstr == "0xea"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xeb"):
       print()
     elif(hexInstr == "0xec"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xed"):
       print()
     elif(hexInstr == "0xee"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xef"):
       print()
@@ -671,17 +671,17 @@ class Disassemble:
     elif(hexInstr == "0xf1"):
       print()
     elif(hexInstr == "0xf2"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xf3"):
       print()
     elif(hexInstr == "0xf4"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xf5"):
       print()
     elif(hexInstr == "0xf6"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xf7"):
       print()
@@ -690,17 +690,17 @@ class Disassemble:
     elif(hexInstr == "0xf9"):
       print()
     elif(hexInstr == "0xfa"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xfb"):
       print()
     elif(hexInstr == "0xfc"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
       Disassemble.pc+=2
     elif(hexInstr == "0xfd"):
       print()
     elif(hexInstr == "0xfe"):
-      print()
+      print("" + str(hex(Disassemble.instructions[Disassemble.pc+1])))
       Disassemble.pc+=1
     elif(hexInstr == "0xff"):
       print()
