@@ -137,95 +137,573 @@ class Disassemble:
   def __init__(self):
     f=open("threadingMaybeBetter.txt","a+")
     start = int(round(time.time() * 1000))
-    thread1 = threading.Thread(target=Disassemble.threadFunc, args=(self,)).start()
+    thread1 = threading.Thread(target=Disassemble.run, args=(self,)).start()
     threading.Thread.join(self)
     end = int(round(time.time() * 1000))
     f.write(str(end-start) + "\n")
 
-  def threadFunc(self):
+  def run(self):
       while Disassemble.pc < len(Disassemble.instructions):
           Disassemble.interpet(self, hex(Disassemble.instructions[Disassemble.pc]))
           Disassemble.pc += 1
 
   def interpet(self,hexInstr):
-      if(hexInstr == "0x0"):
-          print("0x0 NOP " + str(Disassemble.pc))
-      elif(hexInstr == "0x1"):
-          print("0x01 LXI " + str(hex(Disassemble.instructions[Disassemble.pc+1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc+2])))
-          Disassemble.pc+=2
-      elif(hexInstr == "0x2"):
-        print("0x02 STAX B")
-      elif(hexInstr == "0x3"):
-        print("0x03 INX B")
-      elif(hexInstr == "0x4"):
-        print("0x04 INR B")
-      elif(hexInstr == "0x5"):
-        print("0x05 DCR B")
-      elif(hexInstr == "0x6"):
-        print("0x06 MVI B " + str(hex(Disassemble.instructions[Disassemble.pc+1])))
-        Disassemble.pc += 1
-      elif(hexInstr == "0x7"):
-        print("0x07 RLC")
-      elif(hexInstr == "0x8"):
-        print("0x08")
-      elif(hexInstr == "0x9"):
-        print("0x09 DAD B")
-      elif(hexInstr == "0xa"):
-        print("0x0a LDAX B")
-      elif(hexInstr == "0xb"):
-        print("0x0b DCX B")
-      elif(hexInstr == "0xc"):
-        print("0x0c INR C")
-      elif(hexInstr == "0xd"):
-        print("0x0d DCR C")
-      elif(hexInstr == "0xe"):
-        print("0x0e MVI C " + str(hex(Disassemble.instructions[Disassemble.pc+1])))
-        Disassemble.pc += 1
-      elif(hexInstr == "0xf"):
-        print("0x0f RRC")
-      elif (hexInstr == "0x10"):
-        print("0x10")
-      elif (hexInstr == "0x11"):
-        print("0x11 LXI " + str(hex(Disassemble.instructions[Disassemble.pc + 1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc + 2])))
-        Disassemble.pc += 2
-      elif (hexInstr == "0x12"):
-        print("0x12 STAX D")
-      elif (hexInstr == "0x13"):
-        print("0x13 INX D")
-      elif (hexInstr == "0x14"):
-        print("0x14 INR D")
-      elif (hexInstr == "0x15"):
-        print("0x15 DCR D")
-      elif (hexInstr == "0x16"):
-        print("0x16 MVI D " + str(hex(Disassemble.instructions[Disassemble.pc + 1])))
-        Disassemble.pc += 1
-      elif (hexInstr == "0x17"):
-        print("0x17 RAL")
-      elif (hexInstr == "0x18"):
-        print("0x18")
-      elif (hexInstr == "0x19"):
-        print("0x19 DAD D")
-      elif (hexInstr == "0x1a"):
-        print("0x1a LDAX D")
-      elif (hexInstr == "0x1b"):
-        print("0x1b DCX D")
-      elif (hexInstr == "0x1c"):
-        print("0x1c INR E")
-      elif (hexInstr == "0x1d"):
-        print("0x1d DCR E")
-      elif (hexInstr == "0x1e"):
-        print("0x1e MVI E " + str(hex(Disassemble.instructions[Disassemble.pc + 1])))
-        Disassemble.pc += 1
-      elif (hexInstr == "0x1f"):
-        print("0x1f RAR")
-      elif (hexInstr == "0x2"):
-        print("0x2")
-      elif (hexInstr == "0x21"):
-        print("0x21 LXI " + str(hex(Disassemble.instructions[Disassemble.pc + 1])) + " " + str(hex(Disassemble.instructions[Disassemble.pc + 2])))
-        Disassemble.pc += 2
-      elif(hexInstr == "0x22"):
-        print("0x22")
-
+    if(hexInstr == "0x0"):
+      print("0x00 NOP")
+    elif(hexInstr == "0x1"):
+      print("")
+      Disassemble.pc+=2
+    elif(hexInstr == "0x2"):
+      print("")
+    elif(hexInstr == "0x3"):
+      print("")
+    elif(hexInstr == "0x4"):
+      print("")
+    elif(hexInstr == "0x5"):
+      print("")
+    elif(hexInstr == "0x6"):
+      print("")
+      Disassemble.pc+=1
+    elif(hexInstr == "0x7"):
+      print("")
+    elif(hexInstr == "0x8"):
+      print("")
+    elif(hexInstr == "0x9"):
+      print("")
+    elif(hexInstr == "0xa"):
+      print("")
+    elif(hexInstr == "0xb"):
+      print("")
+    elif(hexInstr == "0xc"):
+      print("")
+    elif(hexInstr == "0xd"):
+      print("")
+    elif(hexInstr == "0xe"):
+      print("")
+      Disassemble.pc+=1
+    elif (hexInstr == "0xf"):
+      print("")
+    elif(hexInstr == "0x10"):
+      print()
+    elif(hexInstr == "0x11"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0x12"):
+      print()
+    elif(hexInstr == "0x13"):
+      print()
+    elif(hexInstr == "0x14"):
+      print()
+    elif(hexInstr == "0x15"):
+      print()
+    elif(hexInstr == "0x16"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0x17"):
+      print()
+    elif(hexInstr == "0x18"):
+      print()
+    elif(hexInstr == "0x19"):
+      print()
+    elif(hexInstr == "0x1a"):
+      print()
+    elif(hexInstr == "0x1b"):
+      print()
+    elif(hexInstr == "0x1c"):
+      print()
+    elif(hexInstr == "0x1d"):
+      print()
+    elif(hexInstr == "0x1e"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0x1f"):
+      print()
+    elif(hexInstr == "0x20"):
+      print()
+    elif(hexInstr == "0x21"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0x22"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0x23"):
+      print()
+    elif(hexInstr == "0x24"):
+      print()
+    elif(hexInstr == "0x25"):
+      print()
+    elif(hexInstr == "0x26"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0x27"):
+      print()
+    elif(hexInstr == "0x28"):
+      print()
+    elif(hexInstr == "0x29"):
+      print()
+    elif(hexInstr == "0x2a"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0x2b"):
+      print()
+    elif(hexInstr == "0x2c"):
+      print()
+    elif(hexInstr == "0x2d"):
+      print()
+    elif(hexInstr == "0x2e"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0x2f"):
+      print()
+    elif(hexInstr == "0x30"):
+      print()
+    elif(hexInstr == "0x31"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0x32"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0x33"):
+      print()
+    elif(hexInstr == "0x34"):
+      print()
+    elif(hexInstr == "0x35"):
+      print()
+    elif(hexInstr == "0x36"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0x37"):
+      print()
+    elif(hexInstr == "0x38"):
+      print()
+    elif(hexInstr == "0x39"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0x3a"):
+      print()
+    elif(hexInstr == "0x3b"):
+      print()
+    elif(hexInstr == "0x3c"):
+      print()
+    elif(hexInstr == "0x3d"):
+      print()
+    elif(hexInstr == "0x3e"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0x3f"):
+      print()
+    elif(hexInstr == "0x40"):
+      print()
+    elif(hexInstr == "0x41"):
+      print()
+    elif(hexInstr == "0x42"):
+      print()
+    elif(hexInstr == "0x43"):
+      print()
+    elif(hexInstr == "0x44"):
+      print()
+    elif(hexInstr == "0x45"):
+      print()
+    elif(hexInstr == "0x46"):
+      print()
+    elif(hexInstr == "0x47"):
+      print()
+    elif(hexInstr == "0x48"):
+      print()
+    elif(hexInstr == "0x49"):
+      print()
+    elif(hexInstr == "0x4a"):
+      print()
+    elif(hexInstr == "0x4b"):
+      print()
+    elif(hexInstr == "0x4c"):
+      print()
+    elif(hexInstr == "0x4d"):
+      print()
+    elif(hexInstr == "0x4e"):
+      print()
+    elif(hexInstr == "0x4f"):
+      print()
+    elif(hexInstr == "0x50"):
+      print()
+    elif(hexInstr == "0x51"):
+      print()
+    elif(hexInstr == "0x52"):
+      print()
+    elif(hexInstr == "0x53"):
+      print()
+    elif(hexInstr == "0x54"):
+      print()
+    elif(hexInstr == "0x55"):
+      print()
+    elif(hexInstr == "0x56"):
+      print()
+    elif(hexInstr == "0x57"):
+      print()
+    elif(hexInstr == "0x58"):
+      print()
+    elif(hexInstr == "0x59"):
+      print()
+    elif(hexInstr == "0x5a"):
+      print()
+    elif(hexInstr == "0x5b"):
+      print()
+    elif(hexInstr == "0x5c"):
+      print()
+    elif(hexInstr == "0x5d"):
+      print()
+    elif(hexInstr == "0x5e"):
+      print()
+    elif(hexInstr == "0x5f"):
+      print()
+    elif(hexInstr == "0x60"):
+      print()
+    elif(hexInstr == "0x61"):
+      print()
+    elif(hexInstr == "0x62"):
+      print()
+    elif(hexInstr == "0x63"):
+      print()
+    elif(hexInstr == "0x64"):
+      print()
+    elif(hexInstr == "0x65"):
+      print()
+    elif(hexInstr == "0x66"):
+      print()
+    elif(hexInstr == "0x67"):
+      print()
+    elif(hexInstr == "0x68"):
+      print()
+    elif(hexInstr == "0x69"):
+      print()
+    elif(hexInstr == "0x6a"):
+      print()
+    elif(hexInstr == "0x6b"):
+      print()
+    elif(hexInstr == "0x6c"):
+      print()
+    elif(hexInstr == "0x6d"):
+      print()
+    elif(hexInstr == "0x6e"):
+      print()
+    elif(hexInstr == "0x6f"):
+      print()
+    elif(hexInstr == "0x70"):
+      print()
+    elif(hexInstr == "0x71"):
+      print()
+    elif(hexInstr == "0x72"):
+      print()
+    elif(hexInstr == "0x73"):
+      print()
+    elif(hexInstr == "0x74"):
+      print()
+    elif(hexInstr == "0x75"):
+      print()
+    elif(hexInstr == "0x76"):
+      print()
+    elif(hexInstr == "0x77"):
+      print()
+    elif(hexInstr == "0x78"):
+      print()
+    elif(hexInstr == "0x79"):
+      print()
+    elif(hexInstr == "0x7a"):
+      print()
+    elif(hexInstr == "0x7b"):
+      print()
+    elif(hexInstr == "0x7c"):
+      print()
+    elif(hexInstr == "0x7d"):
+      print()
+    elif(hexInstr == "0x7e"):
+      print()
+    elif(hexInstr == "0x7f"):
+      print()
+    elif(hexInstr == "0x80"):
+      print()
+    elif(hexInstr == "0x81"):
+      print()
+    elif(hexInstr == "0x82"):
+      print()
+    elif(hexInstr == "0x83"):
+      print()
+    elif(hexInstr == "0x84"):
+      print()
+    elif(hexInstr == "0x85"):
+      print()
+    elif(hexInstr == "0x86"):
+      print()
+    elif(hexInstr == "0x87"):
+      print()
+    elif(hexInstr == "0x88"):
+      print()
+    elif(hexInstr == "0x89"):
+      print()
+    elif(hexInstr == "0x8a"):
+      print()
+    elif(hexInstr == "0x8b"):
+      print()
+    elif(hexInstr == "0x8c"):
+      print()
+    elif(hexInstr == "0x8d"):
+      print()
+    elif(hexInstr == "0x8e"):
+      print()
+    elif(hexInstr == "0x8f"):
+      print()
+    elif(hexInstr == "0x90"):
+      print()
+    elif(hexInstr == "0x91"):
+      print()
+    elif(hexInstr == "0x92"):
+      print()
+    elif(hexInstr == "0x93"):
+      print()
+    elif(hexInstr == "0x94"):
+      print()
+    elif(hexInstr == "0x95"):
+      print()
+    elif(hexInstr == "0x96"):
+      print()
+    elif(hexInstr == "0x97"):
+      print()
+    elif(hexInstr == "0x98"):
+      print()
+    elif(hexInstr == "0x99"):
+      print()
+    elif(hexInstr == "0x9a"):
+      print()
+    elif(hexInstr == "0x9b"):
+      print()
+    elif(hexInstr == "0x9c"):
+      print()
+    elif(hexInstr == "0x9d"):
+      print()
+    elif(hexInstr == "0x9e"):
+      print()
+    elif(hexInstr == "0x9f"):
+      print()
+    elif(hexInstr == "0xa0"):
+      print()
+    elif(hexInstr == "0xa1"):
+      print()
+    elif(hexInstr == "0xa2"):
+      print()
+    elif(hexInstr == "0xa3"):
+      print()
+    elif(hexInstr == "0xa4"):
+      print()
+    elif(hexInstr == "0xa5"):
+      print()
+    elif(hexInstr == "0xa6"):
+      print()
+    elif(hexInstr == "0xa7"):
+      print()
+    elif(hexInstr == "0xa8"):
+      print()
+    elif(hexInstr == "0xa9"):
+      print()
+    elif(hexInstr == "0xaa"):
+      print()
+    elif(hexInstr == "0xab"):
+      print()
+    elif(hexInstr == "0xac"):
+      print()
+    elif(hexInstr == "0xad"):
+      print()
+    elif(hexInstr == "0xae"):
+      print()
+    elif(hexInstr == "0xaf"):
+      print()
+    elif(hexInstr == "0xb0"):
+      print()
+    elif(hexInstr == "0xb1"):
+      print()
+    elif(hexInstr == "0xb2"):
+      print()
+    elif(hexInstr == "0xb3"):
+      print()
+    elif(hexInstr == "0xb4"):
+      print()
+    elif(hexInstr == "0xb5"):
+      print()
+    elif(hexInstr == "0xb6"):
+      print()
+    elif(hexInstr == "0xb7"):
+      print()
+    elif(hexInstr == "0xb8"):
+      print()
+    elif(hexInstr == "0xb9"):
+      print()
+    elif(hexInstr == "0xba"):
+      print()
+    elif(hexInstr == "0xbb"):
+      print()
+    elif(hexInstr == "0xbc"):
+      print()
+    elif(hexInstr == "0xbd"):
+      print()
+    elif(hexInstr == "0xbe"):
+      print()
+    elif(hexInstr == "0xbf"):
+      print()
+    elif(hexInstr == "0xc0"):
+      print()
+    elif(hexInstr == "0xc1"):
+      print()
+    elif(hexInstr == "0xc2"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xc3"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xc4"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xc5"):
+      print()
+    elif(hexInstr == "0xc6"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xc7"):
+      print()
+    elif(hexInstr == "0xc8"):
+      print()
+    elif(hexInstr == "0xc9"):
+      print()
+    elif(hexInstr == "0xca"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xcb"):
+      print()
+    elif(hexInstr == "0xcc"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xcd"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xce"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xcf"):
+      print()
+    elif(hexInstr == "0xd0"):
+      print()
+    elif(hexInstr == "0xd1"):
+      print()
+    elif(hexInstr == "0xd2"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xd3"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xd4"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xd5"):
+      print()
+    elif(hexInstr == "0xd6"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xd7"):
+      print()
+    elif(hexInstr == "0xd8"):
+      print()
+    elif(hexInstr == "0xd9"):
+      print()
+    elif(hexInstr == "0xda"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xdb"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xdc"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xdd"):
+      print()
+    elif(hexInstr == "0xde"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xdf"):
+      print()
+    elif(hexInstr == "0xe0"):
+      print()
+    elif(hexInstr == "0xe1"):
+      print()
+    elif(hexInstr == "0xe2"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xe3"):
+      print()
+    elif(hexInstr == "0xe4"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xe5"):
+      print()
+    elif(hexInstr == "0xe6"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xe7"):
+      print()
+    elif(hexInstr == "0xe8"):
+      print()
+    elif(hexInstr == "0xe9"):
+      print()
+    elif(hexInstr == "0xea"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xeb"):
+      print()
+    elif(hexInstr == "0xec"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xed"):
+      print()
+    elif(hexInstr == "0xee"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xef"):
+      print()
+    elif(hexInstr == "0xf0"):
+      print()
+    elif(hexInstr == "0xf1"):
+      print()
+    elif(hexInstr == "0xf2"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xf3"):
+      print()
+    elif(hexInstr == "0xf4"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xf5"):
+      print()
+    elif(hexInstr == "0xf6"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xf7"):
+      print()
+    elif(hexInstr == "0xf8"):
+      print()
+    elif(hexInstr == "0xf9"):
+      print()
+    elif(hexInstr == "0xfa"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xfb"):
+      print()
+    elif(hexInstr == "0xfc"):
+      print()
+      Disassemble.pc+=2
+    elif(hexInstr == "0xfd"):
+      print()
+    elif(hexInstr == "0xfe"):
+      print()
+      Disassemble.pc+=1
+    elif(hexInstr == "0xff"):
+      print()
 def main():
     Dis = Disassemble()
 
