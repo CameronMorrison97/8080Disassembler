@@ -708,4 +708,4 @@ def main():
     Dis = Disassemble()
 
 
-main("0x4N MOV C,""0x5N MOV D,""0x5N MOV E,""0x6N MOV H,""0x6N MOV L,""0x7N MOV M,")
+main()
