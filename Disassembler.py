@@ -135,11 +135,7 @@ class Disassemble:
   0x22,0xFC,0x22,0xCD,0xE4,0x01,0xCD,0x7F,0x1A,0xCD,0x8D,0x08,0xCD,0xD6,0x09,0x00]
 
   def __init__(self):
-    f=open("threadingMaybeBetter.txt","a+")
-    start = int(round(time.time() * 1000))
     thread1 = threading.Thread(target=Disassemble.run, args=(self,)).start()
-    end = int(round(time.time() * 1000))
-    f.write(str(end-start) + "\n")
 
   def run(self):
       while Disassemble.pc < len(Disassemble.instructions):
